@@ -1,0 +1,28 @@
+include <iostream>//girdi/çıktı fonksiyonları için kütüphane çağrıldı
+
+using namespace std;//iostream kütüphanesi için isim uzayı tanımlandı
+
+int main()
+{
+    setlocale(LC_ALL,"turkish");//türkçe karakter
+
+    int s1,s2;//int (tamsayı)tipinde s1,s2 değişkenini tanımladı 
+
+    double ort;//double(ondalıklı)tipinde ort değişkenini tanımladı 
+
+    cout<<"lütfen birinci sayıyı giriniz";//değişkeni almak için kullanıcıdan int tipinde bir değer girilmesi istendi 
+
+    cin>>s1;//kullanıcıdan alınan değer s1 değişkeninde tutuldu ve okutuldu
+ 
+    cout<<"lütfen ikinci sayıyı giriniz";//değişkeni almak için kullanıcıdan int tipinde değer girilmesi istendi
+
+    cin>>s2;//kullanıcıdan alınan değer s2 değişkeninde tutuldu ve okutuldu 
+
+    ort=(s1+s2)/2//fonksiyonun parametresi s1 ve s2 toplandı ikiyle bölündü çıkan sonuc ort değişkenine atandı ve tutulması istendi
+
+    cout<<"ortalama"<<ort;//ortalama ekrana yazdırıldı
+
+    return0;
+    
+    
+}

@@ -1,0 +1,30 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL,"turkish");//türkçe karakter
+
+    int kisakenar,uzunkenar,alan,cevre;//int (tamsayı)tipinde kisakenar,uzunkenar,alan,cevre değişkeni tanımlandı
+
+    cout<<"kisakenarı giriniz";//değişkeni almak için kullanıcıdan int tipinde kisakenar girilmesi istendi
+
+    cin>>kisakenar;//kullanıcıdan alınan değer kisakenar değişkeninde tutuldu ve okutuldu
+
+    cout<<"uzunkenarı giriniz";//değişkeni almak için int tipinde  uzunkenar girilmesi istendi 
+
+    cin>>uzunkenar;//kullanıcıdan alınan değer uzunkenar değişkeninde tutuldu ve okutuldu 
+
+    cevre=(kisakenar+uzunkenar)*2;//fonksiyonun parametresi olan kisakenar ve uzunkenar toplandı çıkan değer 2 le çarpıldı sonuç cevre değişkenine atandı ve tutulması istendi
+
+    alan=kisakenar*uzunkenar;//kisakenar ve uzunkenar çarpıldı çıkan sonuç alan değişkenine atandı ve tutulması istendi
+
+    cout<<"cevre"<<cevre<<endl;//cevre ekrana yzdırıldı ve alt satıra geçildi
+
+    cout<<"alan"<<alan;//alan ekrana yazdırıldı
+
+    return0;//program hatasız sonlandırıldı 
+    
+}

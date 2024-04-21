@@ -1,0 +1,34 @@
+#include <iostream>//girdi/çıktı fonksiyonları için kütüphane çağrıldı
+
+using namespace std;//iostream kütüphanesi için isim uzayı tanımlandı
+
+int main()
+{
+    setlocale(LC_ALL,"turkish");//türkçe karakter
+
+int vize,final;//int (tamsayı)tipinde vize final değişkeni tanımlandı
+
+float ort;//float(ondalıklı)tipinde ort değişkeni tanımlandı 
+
+cout<<"vizen notunu giriniz";//değişkeni almak için kullanıcıdan int tipinde vize notu girilmesi istendi
+
+cin>>vize;//kullanıcıdan alınan değer vize değişkeninde tutuldu ve okutuldu 
+
+cout<<"final notunu giriniz";//değişkeni almak için kullanıcıdan int tipinde final notu girilmesi istendi
+
+cin>>final;//kullanıcıdan alınan değer final değişkeninde tutuldu ve okutuldu 
+
+ort=(final*60)/100+(vize*40)/100;//finalin %60 ı vizenin %40ı alındı alınan değer toplanıp float tipinde ort değişnenine atandı ve tutulması istendi
+
+if(ort>=50)//ortalama 50 den büyük ise 
+{
+    cout<<"geçti";//ekrana geçti yazıldı
+}
+else //ortalama 50 den küçük ise
+{
+    cout<<"kaldı";//ekrana kaldı yazıldı
+}
+    return0;//program hatasız sonlandırıldı
+    
+}
+c++

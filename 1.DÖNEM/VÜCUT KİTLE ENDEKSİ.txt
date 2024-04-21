@@ -1,0 +1,39 @@
+
+#include <iostream>//girdi/çıktı fonksiyonları için kütüphane çağrıldı
+
+using namespace std;//iostream kütüphanesi için isim uzayı tanımlandı
+
+int main()
+{
+    setlocale(LC_ALL,"turkish");//türkçe karakter
+float kilo,boy,vke;//float tipinde kilo boy vce değişkenini tanımlandı
+cout<<"lütfen kilonuzu giriniz"<<endl;//değişkeni almak için kullanıcıdan float tipinde kilo değeri girilmesi istendi ve alt satıra geçildi
+cin>>kilo;//kullanıcıdan alınan değer kilo değişkeninde tutuldu ve okutuldu
+cout<<"lütfen boyunuzu giriniz"<<endl;//değişkeni almak için kullanıcıdan float tipinde boy değeri girilmesi isntedi be bir alt satıra geçildi
+cin>>boy;//kullanıcıdan alınan değer boy değişkeninde tutuldu ve okutuldu 
+vke=kilo/(boy*boy);// kilo boy'un karesine bölündü çıkan sonuç vke ne atandı ve tutulması istendi 
+if(vke<20)//vücüt kitle endeksi 20 den küçük ise
+{
+    cout<<"zayıf";//ekrana zayıf yazıldı 
+}
+else if (vke>20&&vke<25)//vücüt kitle endekjsi 20 den büyük 25 küçük ise
+{
+    cout<<"normal"<<endl;//ekrana normal yazıldı ve bir alt satıra geçildi
+}
+    else if(vke>25&&vke<30)//vücüt kitle endeksi 25 den büyük 30 dan küçük ise 
+    {
+        cout<<"hafif şişman"<<endl;//ekrana hafif şişmab yazıldı ve bir alt satıra geçildi
+    }
+    else if (vke>30)//vücüt kitle endeksi 30 dan büyük ise 
+    {
+        cout<<"şişman"<<endl;//ekrana şişman yazıldı ve bir alt satıra geçildi
+    }
+    else
+    {
+    cout<<"lütfen boyunuzu ve kilonuzu tekrar giriniz"<<endl;//kullanıcıdan boyu ve kiloyu tekrar girilmesi istendi ve bir alt satıra geçildi
+    }
+    cout<<"vücüt kitle endeksiniz"<<vke;//ekrana vücut kitle endeksi yazıldı
+    return0;//program hatasız sonlandırıldı
+    
+
+}
